@@ -1,0 +1,15 @@
+.outer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 5px;
+}
+
+.search{
+    width: 30%;
+    
+}
