@@ -1,10 +1,18 @@
-import Header from "../../components/header"
+
+import { BrowserRouter as Router } from 'react-router-dom'
+import Routes from "../../routes"
+import BasicLayout from "../../layouts/BasicLayouts";
 
 function App() {
   return (
+    <Router>
+      <BasicLayout>
+
     <div className="App">
-      <Header />
+      <Routes/>
     </div>
+      </BasicLayout>
+    </Router>
   );
 }
 

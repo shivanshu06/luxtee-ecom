@@ -1,7 +1,11 @@
 .outer{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    /* padding: 20px; */
+    margin: 0 auto; 
+    max-width: 1200px;
+    padding:  20px;
+    align-items: center; 
 }
 
 .navlinks{
@@ -10,6 +14,16 @@
 }
 
 .search{
-    width: 30%;
+    width: 25%;
+    border: none;
+    border-radius: 50px;
+    height: 16px;
+    padding: 15px;
+    background: #F2F0F1;
+    outline: none;
     
+}
+
+.link{
+    color: black;
 }
