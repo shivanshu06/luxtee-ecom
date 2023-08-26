@@ -9,10 +9,20 @@
 
   .align{
     display: flex;
-    background: #F2F0F1;
+   
+   
+    background-image: url('../../assets/images/homepage/wallback.jpg');
+    
+    background-repeat: no-repeat;
+    
     padding: 20px;
+    height: 290px;
     
   }
+
+
+
+  
 
   .card{
     width: 300px;

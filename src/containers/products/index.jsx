@@ -1,8 +1,11 @@
 import React from 'react'
+import styles from "./styles.module.css"
 
 const Products = () => {
   return (
-    <div style={{background:'yellow'}}>Products</div>
+    <div className={styles.container}>
+      <h1>COLLECt</h1>
+    </div>
   )
 }
 

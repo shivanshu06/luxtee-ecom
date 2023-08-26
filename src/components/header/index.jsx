@@ -33,8 +33,10 @@ function header() {
 
                 <Button className={styles.link} type="link">Collection</Button>
                 </Link>
-                
+                <Link to="/contact">
+
                 <Button className={styles.link} type="link">Contact</Button>
+                </Link>
                 <Button type="link" icon={<HeartOutlined />} />
                 <Button type="link" icon={<ShoppingCartOutlined />} />
                 <Button type="link" icon={<LoginOutlined />} />

@@ -15,7 +15,7 @@ const Homepage = () => {
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
                 <Button type='primary' className={styles.shopnow}>Shop now</Button>
           </div>
-                <img style={{height:'400px'}}src={Hero} alt='image'/>
+                {/* <img style={{height:'400px'}}src={Hero} alt='image'/> */}
         </div>
 
         <div className={styles.blueback}>
