@@ -3,3 +3,59 @@
     max-width: 1200px;
     padding: 0 20px; 
 }
+
+.main{
+    background-color: aquamarine;
+}
+
+.footer{
+    /* background-color: aquamarine; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerlogo{
+    width: 200px;
+}
+
+.footerlinks {
+    margin: 0;
+    padding-bottom: 5px;
+    width: 200px;
+
+  }
+  
+  .footerlinks ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerlinks li {
+    margin-bottom: 5px;
+  }
+  
+  .footerlinks a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footersocial a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .footersocial{
+    width: 200px;
+  }
+  
+  .copyright{
+    text-align: center;
+
+  }
+  
+  
+  
+  
+  

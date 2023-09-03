@@ -1,0 +1,33 @@
+.clickableroundcard {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  background-color: #d3d3d3;
+}
+
+  .cardimage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;}
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+
+  .cardtitle {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  

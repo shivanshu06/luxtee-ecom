@@ -11,7 +11,19 @@
     display: flex;
    
    
-    background-image: url('../../assets/images/homepage/wallback.jpg');
+    background-image: url('../../assets/images/homepage/tsh.jpg');
+
+    /* background: linear-gradient(to bottom right, #e67e22, #f1c40f); */
+
+
+
+
+
+
+
+
+
+
     
     background-repeat: no-repeat;
     
@@ -33,11 +45,13 @@
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+    /* background-color: #01BEFF; */
   }
 
   .aligncards{
     display: flex;
     gap: 4px;
+    justify-content: space-between;
   }
 
   h1,h2,h3,p,h4,h5{
@@ -60,11 +74,11 @@
 
   .blueback
 {
-  background-image: url('../../assets/images/homepage/light.jpg');
+  /* background-image: url('../../assets/images/homepage/light.jpg'); */
   text-align: center;
   padding: 10px;
   margin: 20px;
-  color: white;
+  /* color: white; */
 }
 
 .collec{
@@ -76,4 +90,38 @@
 .collecbtn{
   border-radius: 0px;
   font-weight: 600;
+  /* background-color: #01BEFF; */
+  border-radius: 50px;
+  height: 160px;
+    width: 150px;
+    background-image: url("../../assets/images/header/uuu.svg");
+}
+
+.text{
+  text-align: center;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(172,52,105,1) 0%, rgba(0,198,255,1) 100%);
+  color: white;
+  margin-top: 20px;
+}
+
+.poster{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 450px;
+}
+
+.colleccards{
+  width: 200px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/* background-color: #ffdf00; */
+background-image: url("../../assets/images/homepage/kids.jpg");
 }
