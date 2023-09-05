@@ -29,7 +29,7 @@ function header() {
                 <Link to="/">
                 <Button className={styles.link} type="link">Home</Button>
                 </Link>
-                <Link to="/products">
+                <Link to="/category">
 
                 <Button className={styles.link} type="link">Collection</Button>
                 </Link>
@@ -37,8 +37,10 @@ function header() {
 
                 <Button className={styles.link} type="link">Contact</Button>
                 </Link>
-                <Button type="link" icon={<HeartOutlined />} />
+                {/* <Button type="link" icon={<HeartOutlined />} /> */}
+                <Link to="/shoppingcart">
                 <Button type="link" icon={<ShoppingCartOutlined />} />
+                </Link>
                 <Button type="link" icon={<LoginOutlined />} />
             </div>
         </div>

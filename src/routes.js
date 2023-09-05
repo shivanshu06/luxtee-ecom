@@ -1,15 +1,19 @@
 import React from "react";
 import { Route,Routes } from "react-router-dom";
 import Home from "./containers/home"
-import Products from "./containers/products"
+import Products from "./containers/category"
 import Contact from "./containers/contact"
+import Collection from "./containers/collection"
+import Shoppingcart from "./containers/shoppingcart";
 
 function Rout(){
     return(
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/products" element={<Products/>}/>
+            <Route path="/category" element={<Products/>}/>
             <Route path="/contact" element={<Contact/>}/>
+            <Route path="/collection/:category" element={<Collection/>}></Route>
+            <Route path="/shoppingcart" element={<Shoppingcart/>}/>
         </Routes>
     )
 }

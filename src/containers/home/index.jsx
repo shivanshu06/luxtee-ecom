@@ -66,16 +66,18 @@ const Homepage = () => {
         <div className={styles.newarrivals}>
           <h1>NEW ARRIVALS</h1>
           <div className={styles.aligncards}>
-            <Card className={styles.card}>
+            <Card className={styles.card} hoverable>
               <div ><img style={{height:"199px"}} src={a}  alt='tee'/></div>
               <h3>checkerd tshirt</h3>
               <h2>$150</h2>
+              <Button type='primary'>Add to cart</Button>
             </Card>
 
-            <Card className={styles.card}>
+            <Card className={styles.card} hoverable>
               <div><img style={{height:"199px"}}src={b} alt='tee'/></div>
               <h3>checkerd tshirt</h3>
               <h2>$150</h2>
+              <Button type='primary'>Add to cart</Button>
             </Card>
 
             <Card className={styles.card}>
