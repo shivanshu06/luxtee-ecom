@@ -28,3 +28,20 @@
     color: black;
     font-weight: 500;
 }
+
+.belownav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.searchbar{
+    width: 450px;
+}
+
+@media (max-width: 768px) {
+    .searchbar {
+      width: 150px;
+    }
+}
+

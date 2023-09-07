@@ -11,24 +11,14 @@
     display: flex;
    
    
-    background-image: url('../../assets/images/homepage/tsh.jpg');
+    /* background-image: url('../../assets/images/homepage/tsh.jpg'); */
 
     /* background: linear-gradient(to bottom right, #e67e22, #f1c40f); */
-
-
-
-
-
-
-
-
-
-
-    
-    background-repeat: no-repeat;
-    
+ background-repeat: no-repeat;
+ background-color: #FFFFE0;
     padding: 20px;
-    height: 290px;
+    /* height: 290px; */
+    margin-top: 25px;
     
   }
 
@@ -38,21 +28,22 @@
 
   .card{
     width: 300px;
+    margin: 10px;
   }
 
-  .newarrivals{
+  /* .newarrivals{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-    /* background-color: #01BEFF; */
-  }
+    
+  } */
 
-  .aligncards{
+  /* .aligncards{
     display: flex;
     gap: 4px;
     justify-content: space-between;
-  }
+  } */
 
   h1,h2,h3,p,h4,h5{
     font-family: 'Urbanist', sans-serif;
@@ -63,12 +54,14 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+    
   }
 
   .shopnow{
     /* color: white; */
-    background-color: #01BEFF;
-    border-radius: 50px;
+    background-color: black;
+    
+    color: white;
     /* padding: 20px; */
   }
 
@@ -85,6 +78,7 @@
   display: flex;
   gap: 2rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .collecbtn{
@@ -108,13 +102,15 @@
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(172,52,105,1) 0%, rgba(0,198,255,1) 100%);
   color: white;
   margin-top: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-.poster{
+/* .poster{
   margin-top: 25px;
   margin-bottom: 25px;
   height: 450px;
-}
+} */
 
 .colleccards{
   width: 200px;

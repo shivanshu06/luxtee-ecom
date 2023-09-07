@@ -20,13 +20,10 @@ function header() {
         <Search
       placeholder="Search products"
     //   onSearch={onSearch}
-      style={{
-        width: 450,
-        
-      }}
+      className={styles.searchbar}
     />
             <div className={styles.navlinks}>
-                <Link to="/">
+                {/* <Link to="/">
                 <Button className={styles.link} type="link">Home</Button>
                 </Link>
                 <Link to="/category">
@@ -36,7 +33,7 @@ function header() {
                 <Link to="/contact">
 
                 <Button className={styles.link} type="link">Contact</Button>
-                </Link>
+                </Link> */}
                 {/* <Button type="link" icon={<HeartOutlined />} /> */}
                 <Link to="/shoppingcart">
                 <Button type="link" icon={<ShoppingCartOutlined />} />
@@ -44,6 +41,20 @@ function header() {
                 <Button type="link" icon={<LoginOutlined />} />
             </div>
         </div>
+        <div className={styles.belownav}>
+           <Link to="/">
+                <Button className={styles.link} type="link">HOME</Button>
+                </Link>
+                <Link to="/category">
+
+                <Button className={styles.link} type="link">COLLECTION</Button>
+                </Link>
+                <Link to="/contact">
+
+                <Button className={styles.link} type="link">CONTACT</Button>
+                </Link>
+                </div>
+                <hr></hr>
        
         </>
     )

@@ -48,7 +48,7 @@ const uppercaseCategory=category.toUpperCase()
         <h1>{uppercaseCategory} Collection</h1>
       <Row gutter={[16,16]}>
         {Data.map((item) => (
-          <Col key={item._id} span={8}>
+          <Col key={item._id} span={8} xs={24} sm={12} md={8} lg={6}>
             <Card hoverable>
               <img src="" alt="image" />
 

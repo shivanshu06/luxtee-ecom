@@ -8,8 +8,8 @@ const Footer = () => {
     <div>
     <footer className={styles.footer}>
       <div className={styles.footerlogo}>
-        <img style={{height:'145px'}} src={logo} alt="Company Logo" />
-        <h5>Luxetee is your ultimate source for finding the perfect T-shirt that matches your style and personality. Our dedicated team of designers and creators are committed to bringing you a diverse range of T-shirt designs that inspire and make a statement.</h5>
+        <img style={{height:'50px',width:'30%'}} src={logo} alt="Company Logo" />
+        <p>Luxetee is your ultimate source for finding the perfect T-shirt that matches your style and personality. Our dedicated team of designers and creators are committed to bringing you a diverse range of T-shirt designs that inspire and make a statement.</p>
       </div>
       <div className={styles.footerlinks}>
         <ul>
@@ -24,9 +24,9 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className={styles.footersocial}>
+      <div className={styles.footerlinks}>
         <h3>Collections </h3>
-        <ul>
+        <ul >
           <li>Graphic Tees</li>
           <br></br>
           <li>Nature-Inspired</li>
@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
       <div className={styles.footersocial}>
         <h3>Contact Us</h3>
-        <h5>Feel free to reach out to us with any questions, feedback, or concerns.</h5>
+        <p>Feel free to reach out to us with any questions, feedback, or concerns.</p>
         {/* <br></br> */}
         <h4>Phone:- 888888899</h4>
         {/* <br></br> */}

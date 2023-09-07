@@ -7,4 +7,48 @@
   .card{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .rate{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* @media (max-width: 768px) {
+    .card{
+      justify-content: center;
+    }
+  } */
+
+  .incdec{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+  }
+
+  .emptycartimage{
+    width: 30%;
+    
+  }
+
+  .oops{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summary{
+    width: 50%;
+    
+  }
+
+  .cardSummary{
+    display: flex;
+    justify-content: flex-end;
   }
