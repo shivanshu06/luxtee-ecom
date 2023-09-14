@@ -4,7 +4,7 @@ import Footer from "../components/footer"
 
 function BasicLayout({children}) {
     return(
-        <div>
+        <div style={{ width: '100%' }}>
           <Header/>
           <div style={{ marginTop: '0px' }}>{children}</div>
           <Footer/>

@@ -12,10 +12,13 @@ const { Search } = Input;
 function header() {
     
     return(
-
-        <>
+       
+        <div>
         <div className={styles.outer}>
-        <div > <img style={{height:'60px'}} src={Logo} alt="Logo" className={styles.logo} /></div>
+        <div >
+           {/* <img style={{height:'60px'}} src={Logo} alt="Logo" className={styles.logo} /> */}
+           <p className={styles.logoFont}>fabbricato.</p>
+        </div>
        
         <Search
       placeholder="Search products"
@@ -36,9 +39,9 @@ function header() {
                 </Link> */}
                 {/* <Button type="link" icon={<HeartOutlined />} /> */}
                 <Link to="/shoppingcart">
-                <Button type="link" icon={<ShoppingCartOutlined />} />
+                <Button className={styles.link} size="large" type="link" icon={<ShoppingCartOutlined />} />
                 </Link>
-                <Button type="link" icon={<LoginOutlined />} />
+                <Button className={styles.link} size="large" type="link" icon={<LoginOutlined />} />
             </div>
         </div>
         <div className={styles.belownav}>
@@ -53,10 +56,11 @@ function header() {
 
                 <Button className={styles.link} type="link">CONTACT</Button>
                 </Link>
+                
                 </div>
-                <hr></hr>
+                {/* <hr></hr> */}
        
-        </>
+                </div>
     )
 
 }

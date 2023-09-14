@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+
+html, body {
+    margin: 0;
+   }
+
 .outer{
     display: flex;
     justify-content: space-between;
     /* padding: 20px; */
-    margin: 0 auto; 
-    max-width: 1200px;
+    /* margin: 0 auto;  */
+    /* max-width: 1200px; */
     padding:  20px;
     align-items: center; 
+    background-color: #c5e0e5;
+    /* position: fixed; */
+    height: 22px;
 }
 
 .navlinks{
@@ -26,13 +36,18 @@
 
 .link{
     color: black;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: medium;
 }
 
 .belownav{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    /* background-color: black; */
+    border-radius: 10px;
+    
+    
 }
 
 .searchbar{
@@ -45,3 +60,12 @@
     }
 }
 
+.logoFont{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    
+}
+
+.cartect{
+    text-align: end;
+}

@@ -8,12 +8,13 @@ function App() {
     <Router>
       <BasicLayout>
 
-    <div className="App">
+    {/* <div className="App"> */}
       <Routes/>
-    </div>
+    {/* </div> */}
       </BasicLayout>
+      
     </Router>
-  );
+  )
 }
 
 export default App;

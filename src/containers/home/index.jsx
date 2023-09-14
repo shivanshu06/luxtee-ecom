@@ -11,7 +11,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import man from "../../assets/images/homepage/mencard.png"
 import spiderman from "../../assets/images/homepage/spi.jpeg"
-import off from '../../assets/images/homepage/p133.jpeg'
+import off from '../../assets/images/homepage/latest.jpeg'
 import { Carousel as AntdCarousel } from 'antd';
 import test from "../../assets/images/homepage/mann.jpg"
 import woman from "../../assets/images/homepage/womann.jpg"
@@ -108,17 +108,7 @@ const Homepage = () => {
     <img src={spiderman} alt='spidermancollection'/>
     </div>
   </AntdCarousel>
-        <div className={styles.align}>
-          <div className={styles.headtag}>
-
-                <h1>Crafted for comfort & designed for you.</h1>
-                <p>Luxetee is your ultimate source for finding the perfect T-shirt that matches your style and personality. Our dedicated team of designers and creators are committed to bringing you a diverse range of T-shirt designs that inspire and make a statement. </p>
-                <Link to="/category">
-                <Button type='primary' className={styles.shopnow}>Shop now</Button>
-                </Link>
-          </div>
-                
-        </div>
+        
 
         <div className={styles.blueback}>
           <h3>Collection For your loved ones!!</h3>
@@ -146,6 +136,18 @@ const Homepage = () => {
             </Card>
             </Link>
           </div>
+        </div>
+
+        <div className={styles.align}>
+          <div className={styles.headtag}>
+
+                <h1 style={{color:'white'}}>Crafted for comfort & designed for you.</h1>
+                <p style={{color:'white'}}>Luxetee is your ultimate source for finding the perfect T-shirt that matches your style and personality. Our dedicated team of designers and creators are committed to bringing you a diverse range of T-shirt designs that inspire and make a statement. </p>
+                <Link to="/category">
+                <Button type='primary' className={styles.shopnow}>Shop now</Button>
+                </Link>
+          </div>
+                
         </div>
 
         <div className={styles.text}>
@@ -212,7 +214,7 @@ const Homepage = () => {
 
         <div className={styles.banner}>
           <h1>Teespiration wear your imagination</h1>
-          <h2>We sell what we tell so shopping karo bindass</h2>
+          <h2>We sell what we tell <span style={{color:'yellow'}}>TOH SHOPPING KARO BINDASS</span></h2>
         </div>
     </div>
             )

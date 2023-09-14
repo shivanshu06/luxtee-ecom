@@ -53,8 +53,8 @@ const Footer = () => {
       
       
     </footer>
-    <hr></hr>
-    <h5 className={styles.copyright}>Luxetee© 2023. All rights reserved.</h5>
+    {/* <hr></hr>
+    <h5 className={styles.copyright}>Luxetee© 2023. All rights reserved.</h5> */}
     </div>
   )
 }

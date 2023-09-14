@@ -27,11 +27,12 @@ const Products = () => {
 <div>
 <h1>Legendary Icons Collection</h1>
     <div className={styles.alignround}>
-    <Roundcard imageSrc={marvel} title="Marvel" />
-      <Roundcard imageSrc={marvel} title="Mario" />
+    <Roundcard imageSrc={marvel} title="#1 choice" />
+      <Roundcard imageSrc={marvel} title="Starwars" />
+      <Roundcard imageSrc={marvel} title="Anime" />
       <Roundcard imageSrc={marvel} title="Batman" />
-      <Roundcard imageSrc={marvel} title="Superman" />
-      <Roundcard imageSrc={marvel} title="Power Girls" />
+      <Roundcard imageSrc={marvel} title="Teady Bear" />
+      <Roundcard imageSrc={marvel} title="Spiderman" />
 </div>
 
     </div>

@@ -45,10 +45,12 @@
 
   .summary{
     width: 50%;
+    background-color: #c5e0e5;
     
   }
 
   .cardSummary{
     display: flex;
     justify-content: flex-end;
+    
   }
