@@ -157,7 +157,7 @@ const Homepage = () => {
           {items.map((item, index) => (
             <Card key={index} className={styles.card} hoverable>
               <div>
-                <img style={{ height: '199px' }} src={item.image}  />
+                <img  src={item.image}  />
               </div>
               <h3>{item.title}</h3>
               <h2>{item.price}</h2>
@@ -180,7 +180,7 @@ const Homepage = () => {
           {content.map((item, index) => (
             <div key={index} className={styles.card}>
               <img
-                style={{ height: '199px', borderRadius: '10px' }}
+                style={{  borderRadius: '10px' }}
                 src={item.image}
                 alt={item.title}
               />

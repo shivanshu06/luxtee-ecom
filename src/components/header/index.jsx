@@ -15,16 +15,18 @@ function header() {
        
         <div>
         <div className={styles.outer}>
+        {/* <SearchOutlined style={{ fontSize: '20px' }} /> */}
         <div >
            {/* <img style={{height:'60px'}} src={Logo} alt="Logo" className={styles.logo} /> */}
            <p className={styles.logoFont}>fabbricato.</p>
         </div>
-       
-        <Search
-      placeholder="Search products"
-    //   onSearch={onSearch}
-      className={styles.searchbar}
-    />
+        <input
+  type="text"
+  placeholder="Search products"
+  prefix={<SearchOutlined style={{ fontSize: '20px' }} />}
+
+  className={styles.searchbar}
+/>
             <div className={styles.navlinks}>
                 {/* <Link to="/">
                 <Button className={styles.link} type="link">Home</Button>
@@ -44,6 +46,15 @@ function header() {
                 <Button className={styles.link} size="large" type="link" icon={<LoginOutlined />} />
             </div>
         </div>
+        <div className={styles.searchbarmobile}>
+        <input
+  type="text"
+  placeholder="Search products"
+  prefix={<SearchOutlined style={{ fontSize: '20px' }} />}
+
+  className={styles.searchbardesign}
+/>
+</div>
         <div className={styles.belownav}>
            <Link to="/">
                 <Button className={styles.link} type="link">HOME</Button>

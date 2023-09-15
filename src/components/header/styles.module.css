@@ -13,7 +13,7 @@ html, body {
     /* max-width: 1200px; */
     padding:  20px;
     align-items: center; 
-    background-color: #c5e0e5;
+    /* background-color: #c5e0e5; */
     /* position: fixed; */
     height: 22px;
 }
@@ -46,18 +46,49 @@ html, body {
     margin-bottom: 20px;
     /* background-color: black; */
     border-radius: 10px;
+    margin-top: 8px;
     
     
 }
 
-.searchbar{
-    width: 450px;
-}
+.searchbar {
+    width: 400px; 
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    background-color: #F2F0F1;
+    /* transition: border-width 0.3s; */
+  }
 
-@media (max-width: 768px) {
+  .searchbar:focus {
+    border-width: 1px; 
+  }
+
+  .searchbarmobile{
+    display: none;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
     .searchbar {
-      width: 150px;
-    }
+      display: none;
+  }
+
+  .searchbarmobile{
+    display: flex;
+    justify-content: center;
+  }
+
+  .searchbardesign{
+    background-color: #F2F0F1;
+    height: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+  }
+
 }
 
 .logoFont{
@@ -69,3 +100,4 @@ html, body {
 .cartect{
     text-align: end;
 }
+
