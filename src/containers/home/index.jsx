@@ -10,11 +10,12 @@ import marvel from "../../assets/images/homepage/marvel2.jpg"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import man from "../../assets/images/homepage/mencard.png"
-import spiderman from "../../assets/images/homepage/spi.jpeg"
+import style from "../../style.module.css"
+import spiderman from "../../assets/images/homepage/spiderman.jpeg"
 import off from '../../assets/images/homepage/latest.jpeg'
 import { Carousel as AntdCarousel } from 'antd';
-import test from "../../assets/images/homepage/mann.jpg"
-import woman from "../../assets/images/homepage/womann.jpg"
+import test from "../../assets/images/homepage/men.png"
+import woman from "../../assets/images/homepage/women.png"
 import kids from "../../assets/images/homepage/kids.jpg"
 import styles from "./styles.module.css"
 import { Button, Card } from 'antd'
@@ -98,9 +99,8 @@ const Homepage = () => {
   // console.log(items)
 
   return (
-    <div className={styles.container}>
-
-<AntdCarousel autoplay>
+    <div>
+    <AntdCarousel autoplay >
     <div className={styles.poster}>
     <img src={off} alt='off'/>
     </div>
@@ -109,6 +109,7 @@ const Homepage = () => {
     </div>
   </AntdCarousel>
         
+  <div className={styles.container}>
 
         <div className={styles.blueback}>
           <h3>Collection For your loved ones!!</h3>
@@ -132,7 +133,7 @@ const Homepage = () => {
 
             <Link to="/collection/kids">
             <Card  style={{ width: '180px' }} hoverable
-      cover={<img alt="Image" src={kids} />}> <Meta title="Kids"/>
+      cover={<img alt="Image" src={kids} style={{height:'209px'}}/>}> <Meta title="Kids"/>
             </Card>
             </Link>
           </div>
@@ -144,7 +145,7 @@ const Homepage = () => {
                 <h1 style={{color:'white'}}>Crafted for comfort & designed for you.</h1>
                 <p style={{color:'white'}}>Luxetee is your ultimate source for finding the perfect T-shirt that matches your style and personality. Our dedicated team of designers and creators are committed to bringing you a diverse range of T-shirt designs that inspire and make a statement. </p>
                 <Link to="/category">
-                <Button type='primary' className={styles.shopnow}>Shop now</Button>
+                <Button type='primary' className={style.buttonglobal}>Shop now</Button>
                 </Link>
           </div>
                 
@@ -168,6 +169,10 @@ const Homepage = () => {
         </Carousel>
       </div>
     </div>
+
+
+     
+    
 
         {/* <div className={styles.poster}>
           <img src={spiderman} alt='spidermancollection'/>
@@ -216,6 +221,7 @@ const Homepage = () => {
           <h1>Teespiration wear your imagination</h1>
           <h2>We sell what we tell <span style={{color:'yellow'}}>TOH SHOPPING KARO BINDASS</span></h2>
         </div>
+    </div>
     </div>
             )
           }

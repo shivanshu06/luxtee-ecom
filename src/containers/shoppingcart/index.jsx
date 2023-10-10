@@ -1,5 +1,8 @@
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
+import axios from "axios";
+// import Razorpay from 'razorpay';
 import { useState } from "react";
+import { DeleteOutlined } from '@ant-design/icons';
 import { removeFromCart,incrementQuantity,decrementQuantity } from '../../reducer';
 import { useSelector, useDispatch } from 'react-redux';
 import { Card ,Row,Button,Modal,Form,Input,Select} from "antd";
@@ -61,15 +64,60 @@ const Shoppingcart = () => {
     );
   }
 
+
+  const checkoutHandler = async (amount) => {
+
+    // const { data: { key } } = await axios.get("http://www.localhost:5000/getkey")
+
+    // const { data } = await axios.post("http://localhost:5000/checkout", {
+    //     amount
+    // })
+
+    console.log(window)
+
+
+    
+  //   const options = {
+  //     "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
+  //     "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+  //     "currency": "INR",
+  //     "name": "Acme Corp", //your business name
+  //     "description": "Test Transaction",
+  //     "image": "https://example.com/your_logo",
+  //     "order_id": "order_9A33XWu170gUtm", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+  //     "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",
+  //     "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
+  //         "name": "Gaurav Kumar", //your customer's name
+  //         "email": "gaurav.kumar@example.com",
+  //         "contact": "9000090000" //Provide the customer's phone number for better conversion rates 
+  //     },
+  //     "notes": {
+  //         "address": "Razorpay Corporate Office"
+  //     },
+  //     "theme": {
+  //         "color": "#3399cc"
+  //     }
+  // };
+  // var rzp1 = new Razorpay(options);
+  // document.getElementById('rzp-button1').onclick = function(e){
+  //     rzp1.open();
+  //     e.preventDefault();
+  // }
+}
+
+  
+
   return (
     <div className={styles.container}>
       <h1 style={{textAlign:'center'}}>Your Cart</h1>
+      <div className={styles.layout}>
+      <div>
       <ul>
         {cartItems.map((item) => (
           <Card
             key={item.id}
             hoverable
-            style={{ border: '1px solid black', marginBottom: '8px' }}
+            style={{ backgroundColor:'aliceblue', marginBottom: '8px' }}
           >
             <div className={styles.card}>
               <img style={{ width: '120px' }} src="" alt="image" />
@@ -84,12 +132,13 @@ const Shoppingcart = () => {
               </div>
               <h2>Rs {item.price * item.quantity}</h2>
               <Button onClick={() => dispatch(removeFromCart(item.id))}>
-                Remove
+              <DeleteOutlined />
               </Button>
               </div>
             </div>
           </Card>
-        ))}
+        ))}</ul>
+        </div>
         <div className={styles.cardSummary}>
          <Card hoverable className={styles.summary}>
         <h2>Order Summary</h2>
@@ -102,10 +151,12 @@ const Shoppingcart = () => {
           </div>
         
         <hr></hr>
-        <Button style={{background:'black',color:'white'}} onClick={showModal}>Proceed to Payment</Button>
+        <Button style={{background:'black',color:'white'}} onClick={()=>checkoutHandler(totalPrice)}>Proceed to Payment</Button>
         </Card>
         </div>
-      </ul>
+
+        </div>
+      
 
       <Modal title="Please fill your details" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null}
       style={{

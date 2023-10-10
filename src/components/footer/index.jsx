@@ -8,8 +8,9 @@ const Footer = () => {
     <div>
     <footer className={styles.footer}>
       <div className={styles.footerlogo}>
-        <img style={{height:'50px',width:'30%'}} src={logo} alt="Company Logo" />
-        <p>Luxetee is your ultimate source for finding the perfect T-shirt that matches your style and personality. Our dedicated team of designers and creators are committed to bringing you a diverse range of T-shirt designs that inspire and make a statement.</p>
+        {/* <img style={{height:'50px',width:'30%'}} src={logo} alt="Company Logo" /> */}
+        <p className={styles.logoFont}>fabbricato</p>
+        <p>Fabbricato is your ultimate source for finding the perfect T-shirt that matches your style and personality. Our dedicated team of designers and creators are committed to bringing you a diverse range of T-shirt designs that inspire and make a statement.</p>
       </div>
       <div className={styles.footerlinks}>
         <ul>
@@ -40,14 +41,14 @@ const Footer = () => {
         <h3>Contact Us</h3>
         <p>Feel free to reach out to us with any questions, feedback, or concerns.</p>
         {/* <br></br> */}
-        <h4>Phone:- 888888899</h4>
+        <h4>Phone:- 9458538368</h4>
         {/* <br></br> */}
-        <h4>Email:- xyz@gmail.com</h4>
+        <h4>Email:- fabbricato88@gmail.com</h4>
         
         <div className="footer-social">
-        <a href="https://www.facebook.com/your-page"><FacebookOutlined /></a>
-        <a href="https://www.twitter.com/your-page"><TwitterOutlined /></a>
-        <a href="https://www.instagram.com/your-page"><InstagramOutlined /></a>
+        {/* <a href="https://www.facebook.com/your-page"><FacebookOutlined /></a> */}
+        {/* <a href="https://www.twitter.com/your-page"><TwitterOutlined /></a> */}
+        <a href="https://instagram.com/fabbricato.in?igshid=NzZlODBkYWE4Ng=="><InstagramOutlined /></a>
       </div>
       </div>
       

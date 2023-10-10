@@ -1,0 +1,30 @@
+.container {
+    margin: 0 auto; 
+    max-width: 1200px;
+    padding: 40px 20px; 
+  }
+
+  .price{
+    color: #818181;
+font-size: 24px;
+
+font-weight: 400;
+text-decoration: line-through;
+word-wrap: break-word
+  }
+
+  .afterPrice{
+    color: #024E82;
+font-size: 24px;
+
+font-weight: 400;
+word-wrap: break-word
+  }
+
+  .productname{
+    font-size: 36px;
+
+font-weight: 700;
+line-height: 48px;
+word-wrap: break-word
+  }

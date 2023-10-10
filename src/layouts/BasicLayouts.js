@@ -1,16 +1,17 @@
 import React from "react";
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Header from "../components/header";
+import Footer from "../components/footer";
+import styles from "./styles.module.css"; // Import your CSS file
 
-function BasicLayout({children}) {
-    return(
-        <div style={{ width: '100%' }}>
-          <Header/>
-          <div style={{ marginTop: '0px' }}>{children}</div>
-          <Footer/>
-        </div>
-    )
-    
+function BasicLayout({ children }) {
+  return (
+    <div className={styles.layout}>
+      <Header />
+      <div className={styles.content}>{children}
+      <Footer />
+      </div>
+    </div>
+  );
 }
 
-export default BasicLayout
+export default BasicLayout;
